@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: #e6e6e6;
+	color: #0d0c1d;
+	max-width: 96%;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.top-container {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.right {
+	width: 100%;
+}
+
+#avatar {
+	border-radius: 50%;
+	border: 1px solid #fff ;
+	display: block;
+	margin: 0 auto 40px;
+	width: 300px;
+	height: 300px;
+}
+
+.title {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title h3 {
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.title p {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.mid-container {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.socials {
+	margin-top: 8px;
+}
+
+.section-title{
+	display: flex;
+	border-bottom: 2px solid black;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+.section-title h4 {
+	font-size: 32px;
+	font-weight: 500;
+	margin: 8px 16px;
+	text-align: center;
+}
+
+.section-title img {
+	width: 32px;
+}
+
+.social-items a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 500;
+	padding: 4px;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	color: #0d0c1d;
+	transition: 0.2s;
+}
+
+.social-items a:hover{
+	background-color: #52c3bd;
+	color: #fff;
+}
+
+.social-items a img{
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	border: 2px solid transparent ;
+}
+
+.social-items a:hover img{
+	background-color: #fff;
+	border-radius: 50%;
+	border: 2px solid #fff ;
+}
+
+.tech {
+	margin: 16px 0;
+}
+
+.tech ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.tech ul li{
+	flex-basis: 47%;
+	padding: 8px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 4px;
+}
+
+.tech ul li img {
+	width: 32px;
+	height: 32px;
+	margin-right: 4px;
+}
+
+.jobs-list {
+	height: 100%;
+	margin-top: 8px;
+}
+
+.job-item {
+	height: 100%;
+	margin: 0 4px;
+}
+
+.job-info {
+	width: 100%;
+}
+
+.company {
+	line-height: 32px;
+	font-size: 28px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+}
+
+.company span{
+	line-height: 32px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.job {
+	font-size: 24px;
+	font-weight: 400;
+	margin: 4px 8px 0;
+}
+
+.job-description {
+	height: 100%;
+	margin: 8px 16px 0;
+}
+
+.job-description span {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.job-description ul {
+	margin: 8px 16px;
+	list-style: none;
+}
+
+.job-description ul li {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 8px;
+}
+
+.bot-container {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+}
+
+.university {
+	margin: 8px;
+	line-height: 32px;
+	font-size: 28px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+}
+
+.university span{
+	line-height: 32px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.course{
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 0 8px;
+}
+
+
+@media (min-width: 700px) {
+	.top-container {
+		flex-direction: row;
+	}
+
+	.left {
+		min-width: 40%;
+		margin-right: 5%;
+	}
+
+	.right {
+		max-width: 50%;
+	}
+
+
+	#avatar {
+		margin: 0 auto;
+		width: 90%;
+		height: 90%;
+	}
+
+	.title h3 {
+		font-size: 44px;
+	}
+
+	.mid-container {
+		flex-direction: row;
+	}
+
+	.university {
+		margin: 16px 8px;
+	}
+}
